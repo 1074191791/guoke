@@ -29,6 +29,8 @@
         <freemarker.version>2.3.30</freemarker.version>
         <mybatis-plus.version>3.3.1.tmp</mybatis-plus.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <spring-cloud-test.version>2.2.1.RELEASE</spring-cloud-test.version>
+
         <fastDFS-client.version>1.26.1-RELEASE</fastDFS-client.version>
         <guoke-last.version>1.0.0-SNAPSHOT</guoke-last.version>
         <lombok.version>1.18.12</lombok.version>
@@ -44,6 +46,20 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- 测试工程-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-cloud-test.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.junit.vintage</groupId>
+                        <artifactId>junit-vintage-engine</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <!--baomidou-->
