@@ -34,6 +34,8 @@
         <fastDFS-client.version>1.26.1-RELEASE</fastDFS-client.version>
         <guoke-last.version>1.0.0-SNAPSHOT</guoke-last.version>
         <lombok.version>1.18.12</lombok.version>
+        <beanCompier.version>3.3.1</beanCompier.version>
+        <cjlib.version>2.2.2</cjlib.version>
     </properties>
 
     <!--    定义依赖树说明-->
@@ -87,6 +89,29 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <optional>true</optional>
+            </dependency>
+
+
+            <!-- beanCompier -->
+            <dependency>
+                <groupId>asm</groupId>
+                <artifactId>asm</artifactId>
+                <version>${beanCompier.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>asm</groupId>
+                <artifactId>asm-commons</artifactId>
+                <version>${beanCompier.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>asm</groupId>
+                <artifactId>asm-util</artifactId>
+                <version>${beanCompier.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib-nodep</artifactId>
+                <version>${cjlib.version}</version>
             </dependency>
 
             <!--FastDFS客户端-->

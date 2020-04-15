@@ -20,6 +20,13 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <!--guoke-common-->
+        <dependency>
+            <groupId>fun.guoke.parent</groupId>
+            <artifactId>guoke-common</artifactId>
+            <version>${guoke-last.version}</version>
+        </dependency>
+
         <!-- 测试工程-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

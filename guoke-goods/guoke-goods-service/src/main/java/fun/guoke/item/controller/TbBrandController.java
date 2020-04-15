@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-04-14
  */
 @RestController
-@RequestMapping("/fun.guoke.item/tb-brand")
+@RequestMapping("/item/tb-brand")
 public class TbBrandController {
 
 }
